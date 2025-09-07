@@ -7,6 +7,7 @@ const mongoose = require("mongoose");
 const app = express();
 const cors = require('cors')
 const serverless = require('serverless-http')
+require('dotenv').config();
 
 
 app.use(bodyParser.json());
@@ -91,7 +92,10 @@ app.get('/ready',   function(req, res) {
     });
 })
 
-app.listen(3000, () => { console.log("Server successfully running on port - " +3000); })
+app.listen(3000, () => {
+  console.log("Server successfully running on port - " + 3000);
+});
+
 module.exports = app;
 
 //module.exports.handler = serverless(app)
