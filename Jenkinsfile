@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-username/your-nodejs-app.git'
+                git 'https://github.com/durgaprasadraju/solar-system-gitea.git'
             }
         }
 
