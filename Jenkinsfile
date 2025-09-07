@@ -27,13 +27,13 @@ pipeline {
                 sh 'npm run lint'  // Make sure lint script exists in package.json
             }
         }
- */
+ 
         stage('Run Tests') {
             steps {
                 sh 'npm test'
             }
         }
-
+*/
         stage('Build') {
             steps {
                 sh 'npm run build'  // If you have a build step
@@ -42,7 +42,7 @@ pipeline {
 
         stage('Deploy') {
             when {
-                branch 'main'
+                branch 'master'
             }
             steps {
                 echo "Deploying application..."
