@@ -33,13 +33,13 @@ pipeline {
                 sh 'npm test'
             }
         }
-*/
+
         stage('Build') {
             steps {
                 sh 'npm run build'  // If you have a build step
             }
         }
-
+*/
         stage('Deploy') {
             when {
                 branch 'master'
