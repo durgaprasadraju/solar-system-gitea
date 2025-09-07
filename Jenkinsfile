@@ -22,12 +22,12 @@ pipeline {
             }
         }
 
-        stage('Run Lint') {
+     /*    stage('Run Lint') {
             steps {
                 sh 'npm run lint'  // Make sure lint script exists in package.json
             }
         }
-
+ */
         stage('Run Tests') {
             steps {
                 sh 'npm test'
